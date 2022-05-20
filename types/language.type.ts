@@ -1,0 +1,1 @@
+type Language = "ja" | "en";
