@@ -12,15 +12,16 @@ export const AvatarSizes = {
 export interface AvatarProps {
   src: string;
   size: keyof typeof AvatarSizes;
+  hasInteraction?: boolean;
 }
 
 export const Avatar: React.FC<AvatarProps> = (props) => {
-  const { src, size } = props;
+  const { src, size, hasInteraction = false } = props;
+  const cursorProperty = hasInteraction ? "pointer" : "default";
   return (
     <>
       <div className="avatar">
         <Image role="link" aria-hidden={true} src={src} layout="fill" objectFit="contain" />
-        <div className="avatar-interaction mouse-over" />
       </div>
       <style jsx>{`
         .avatar-interaction {
@@ -35,7 +36,7 @@ export const Avatar: React.FC<AvatarProps> = (props) => {
           user-select: none;
           width: ${AvatarSizes[size]};
           height: ${AvatarSizes[size]};
-          cursor: pointer;
+          cursor: ${cursorProperty};
         }
       `}</style>
     </>
