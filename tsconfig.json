@@ -14,7 +14,13 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": "./"
+    "baseUrl": "./",
+    "paths": {
+      "@/states/*": ["states/atoms/*"],
+      "@/DataDisplay/*": ["components/DataDisplay/*"],
+      "@/General/*": ["components/General/*"],
+      "@/Layout/*": ["components/Layout/*"]
+    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
