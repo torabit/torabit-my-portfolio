@@ -17,6 +17,7 @@
     "paths": {
       "@/states/*": ["states/atoms/*"],
       "@/utils/*": ["utils/*"],
+      "@/hooks/*": ["hooks/*"],
       "@/DataDisplay/*": ["components/DataDisplay/*"],
       "@/General/*": ["components/General/*"],
       "@/Layout/*": ["components/Layout/*"]

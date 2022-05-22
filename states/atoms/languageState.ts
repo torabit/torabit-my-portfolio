@@ -8,10 +8,5 @@ const languageState = atom<Language>({
 export const useLanguage = () => {
   const [language, setLanguage] = useRecoilState(languageState);
 
-  const toggleLanguage = () => {
-    const newLanguage = language === "en" ? "ja" : "en";
-    setLanguage(newLanguage);
-  };
-
-  return { language, toggleLanguage };
+  return { language, setLanguage };
 };
