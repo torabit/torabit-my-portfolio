@@ -16,8 +16,8 @@ export const SkillChipList: React.FC<SkillChipListProps> = (props): ReactElement
         <h1 className="skill-chip-list-title">{title}</h1>
         <div className="skill-chip-list">
           {items.map((item, i) => (
-            <div className="skill-chip-wrapper">
-              <SkillChip key={i} label={item.name} svg={item.icon} link={item.url} />
+            <div className="skill-chip-wrapper" key={i}>
+              <SkillChip label={item.name} svg={item.icon} link={item.url} />
             </div>
           ))}
         </div>

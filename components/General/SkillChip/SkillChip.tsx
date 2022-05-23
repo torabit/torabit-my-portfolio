@@ -11,7 +11,7 @@ export const SkillChip: React.FC<SkillChipProps> = (props): ReactElement => {
   const { link, label, svg } = props;
   return (
     <>
-      <a href={link} target="_blank">
+      <a href={link} target="_blank" rel="noreferrer">
         <div className="skill-chip-wrapper">
           <SvgIcon svg={svg} color="red" />
           <span>{label}</span>
