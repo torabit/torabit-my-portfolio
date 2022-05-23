@@ -19,6 +19,7 @@
       "@/states/*": ["states/atoms/*"],
       "@/utils/*": ["utils/*"],
       "@/hooks/*": ["hooks/*"],
+      "@/types/*": ["types/*"],
       "@/DataDisplay/*": ["components/DataDisplay/*"],
       "@/General/*": ["components/General/*"],
       "@/Layout/*": ["components/Layout/*"]

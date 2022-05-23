@@ -1,5 +1,5 @@
 import { useLanguage } from "@/states/languageState";
-import type { Contents } from "types/contents.type";
+import type { Contents } from "@/types/contents.type";
 
 export class ContentsUtil {
   private languageHooks = useLanguage();

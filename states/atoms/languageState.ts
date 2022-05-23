@@ -1,4 +1,5 @@
 import { atom, useRecoilState } from "recoil";
+import type { Language } from "types/language.type";
 
 const languageState = atom<Language>({
   key: "languageState",
