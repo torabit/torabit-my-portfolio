@@ -16,7 +16,10 @@ export const Contents: React.FC = (): ReactElement => {
         <Article title={contents.profile.me}>
           <AddNewLine str={contents.profile.biography} />
         </Article>
-        <Article title={contents.profile.skills}>{renderButtonList()}</Article>
+        <Article title={contents.profile.skills}>
+          {renderButtonList()}
+          <div className="spacer" />
+        </Article>
       </div>
       <style jsx>
         {`
@@ -26,6 +29,14 @@ export const Contents: React.FC = (): ReactElement => {
             flex-direction: column;
             padding-top: 4rem;
             margin: 0 3rem;
+          }
+          .spacer {
+            margin-bottom: 5rem;
+          }
+          @media screen and (min-width: 600px) {
+            .spacer {
+              margin-bottom: 10rem;
+            }
           }
         `}
       </style>
