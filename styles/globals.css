@@ -18,7 +18,6 @@
   --border-radius-rounded: 9000px;
 
   --color-key: #fa586a;
-  --color-dark-blue: #0d4879;
   --color-white: #fff;
   --color-black: #000;
   --color-transparent: transparent;
@@ -37,16 +36,6 @@
   --color-grey-13: #e6e9ea;
   --color-grey-14: #f7f8f8;
   --color-grey-15: #fefefe;
-  --color-green-1: #aff5b4;
-  --color-green-2: #7ee787;
-  --color-green-3: #56d364;
-  --color-green-4: #3fb950;
-  --color-green-5: #2ea043;
-  --color-green-6: #238636;
-  --color-green-7: #196c2e;
-  --color-green-8: #0f5323;
-  --color-green-9: #033a16;
-  --color-green-10: #04260f;
   --color-opac-b-1: rgba(0, 0, 0, 0.05);
   --color-opac-b-2: rgba(0, 0, 0, 0.1);
   --color-opac-b-3: rgba(0, 0, 0, 0.15);
@@ -180,6 +169,9 @@ body {
 
   /* button */
   --color-background-button: var(--color-grey-5);
+
+  /* social link */
+  --color-background-social-link: var(--color-white);
 
   /* skill chip*/
   --color-background-skill-chip: var(--color-grey-5);
