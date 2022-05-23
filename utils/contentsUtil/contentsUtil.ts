@@ -13,8 +13,15 @@ export class ContentsUtil {
       On my spare time, I like making music and play my bass 🎹🎸
        Thank you👶🏾
       `,
+      me: "About Me",
+      skills: "Skills",
     },
-    skills: [{ category: "Programming Language / Library" }, { category: "Database" }, { category: "Other" }],
+    skills: [
+      { category: "Frontend" },
+      { category: "Backend" },
+      { category: "Database" },
+      { category: "Other" },
+    ],
   };
 
   private readonly contentsInJapanese: Contents = {
@@ -27,9 +34,12 @@ export class ContentsUtil {
         趣味は音楽で、休みの日には作曲をしたりベースを弾いたりしています🎹🎸
         よろしくお願いします👶🏾
         `,
+      me: "自己紹介",
+      skills: "できること",
     },
     skills: [
-      { category: "プログラミング言語 / ライブラリ" },
+      { category: "フロントエンド" },
+      { category: "バックエンド" },
       { category: "データベース" },
       { category: "その他" },
     ],

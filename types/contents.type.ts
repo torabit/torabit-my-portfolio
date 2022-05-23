@@ -7,6 +7,8 @@ export interface Profile {
   name: string;
   kana?: string;
   biography: string;
+  me: string;
+  skills: string;
 }
 
 export interface Skill {
