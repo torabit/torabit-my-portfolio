@@ -21,8 +21,8 @@ export const Profile: React.FC = () => {
             <Avatar src="/images/avatar_icon.png" size="XLARGE" />
           </div>
           <div className="profile-meta-data">
-            <p className="profile-name">{contents.profile.name}</p>
             <p className="profile-kana">{contents.profile.kana}</p>
+            <p className="profile-name">{contents.profile.name}</p>
           </div>
           <div className="social-link-wrapper">
             <SocialLink link="https://github.com/torabit">
@@ -67,7 +67,7 @@ export const Profile: React.FC = () => {
           text-align: center;
         }
         .profile-name {
-          margin-bottom: 0;
+          margin: 0;
           text-overflow: ellipsis;
           white-space: nowrap;
           overflow: hidden;
@@ -75,7 +75,7 @@ export const Profile: React.FC = () => {
           font-size: var(--font-size-4);
         }
         .profile-kana {
-          margin-bottom: 0;
+          margin: 3rem 0 0 0;
           text-overflow: ellipsis;
           white-space: nowrap;
           overflow: hidden;
