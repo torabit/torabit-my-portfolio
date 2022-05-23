@@ -1,6 +1,10 @@
 import { Avatar } from "@/DataDisplay/Avatar";
 import Image from "next/image";
 import { ContentsUtil } from "@/utils/contentsUtil";
+import { SocialLink } from "@/General/SocialLink";
+import { FiGithub } from "react-icons/fi";
+import { GrSoundcloud } from "react-icons/gr";
+import { BsTwitter } from "react-icons/bs";
 
 export const Profile: React.FC = () => {
   const contentsUtil = new ContentsUtil();
@@ -19,6 +23,19 @@ export const Profile: React.FC = () => {
           <div className="profile-meta-data">
             <p className="profile-name">{contents.profile.name}</p>
             <p className="profile-kana">{contents.profile.kana}</p>
+          </div>
+          <div className="social-link-wrapper">
+            <SocialLink link="https://github.com/torabit">
+              <FiGithub size="2rem" />
+            </SocialLink>
+            <div className="spacer" />
+            <SocialLink link="https://soundcloud.com/sunsea34">
+              <GrSoundcloud size="2rem" />
+            </SocialLink>
+            <div className="spacer" />
+            <SocialLink link="https://twitter.com/tora_tora_bit">
+              <BsTwitter size="2rem" />
+            </SocialLink>
           </div>
         </div>
       </div>
@@ -64,6 +81,13 @@ export const Profile: React.FC = () => {
           overflow: hidden;
           color: var(--color-text-alt);
           font-size: var(--font-size-8);
+        }
+        .social-link-wrapper {
+          display: flex;
+          margin-top: 2rem;
+        }
+        .spacer {
+          margin-left: 1.5rem;
         }
 
         @media screen and (min-width: 600px) {
