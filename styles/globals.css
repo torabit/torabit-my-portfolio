@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap");
 :root {
+  /* button-size */
+  --button-size-small: 3rem;
+  --button-size-large: 5rem;
+  --button-text-small: 1.3rem;
+  --button-text-large: 2.4rem;
+
   /* avatar-size */
   --avatar-size-xsmall: 3rem;
   --avatar-size-small: 4rem;
@@ -20,6 +26,7 @@
   --color-key: #fa586a;
   --color-white: #fff;
   --color-black: #000;
+  --color-emerald: #00f593;
   --color-transparent: transparent;
   --color-grey-1: #0e1010;
   --color-grey-2: #181b1b;
@@ -36,6 +43,9 @@
   --color-grey-13: #e6e9ea;
   --color-grey-14: #f7f8f8;
   --color-grey-15: #fefefe;
+  --color-litchi-8: #ff7c8b;
+  --color-litchi-9: #fa586a;
+  --color-litchi-10: #ff374e;
   --color-opac-b-1: rgba(0, 0, 0, 0.05);
   --color-opac-b-2: rgba(0, 0, 0, 0.1);
   --color-opac-b-3: rgba(0, 0, 0, 0.15);
@@ -132,10 +142,16 @@ body {
 
   /* button */
   --color-background-button: var(--color-white);
-
+  --color-background-button-filled: var(--color-key);
+  --color-background-button-filled-hover: var(--color-litchi-10);
+  --color-background-button-filled-active: var(--color-key);
   /* skill chip*/
   --color-background-skill-chip: var(--color-grey-15);
   --color-background-skill-chip-hover: var(--color-grey-13);
+
+  /* keyword card */
+  --color-keyword-card-header: var(--color-grey-13);
+  --color-keyword-card-body: var(--color-grey-15);
 
   /* switch */
   --color-background-toggle-handle: var(--color-grey-1);
@@ -169,6 +185,9 @@ body {
 
   /* button */
   --color-background-button: var(--color-grey-5);
+  --color-background-button-filled: var(--color-key);
+  --color-background-button-filled-hover: var(--color-litchi-8);
+  --color-background-button-filled-active: var(--color-key);
 
   /* social link */
   --color-background-social-link: var(--color-white);
@@ -176,6 +195,10 @@ body {
   /* skill chip*/
   --color-background-skill-chip: var(--color-grey-5);
   --color-background-skill-chip-hover: var(--color-grey-7);
+
+  /* keyword card */
+  --color-keyword-card-header: var(--color-grey-5);
+  --color-keyword-card-body: var(--color-grey-2);
 
   /* switch */
   --color-background-toggle-handle: var(--color-white);
@@ -201,4 +224,11 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+img.emoji {
+  height: 1em;
+  width: 1em;
+  margin: 0 0.05em 0 0.1em;
+  vertical-align: -0.1em;
 }
