@@ -5,6 +5,7 @@ import { SocialLink } from "@/General/SocialLink";
 import { FiGithub } from "react-icons/fi";
 import { GrSoundcloud } from "react-icons/gr";
 import { BsTwitter } from "react-icons/bs";
+import twemoji from "twemoji";
 
 export const Profile: React.FC = () => {
   const contentsUtil = new ContentsUtil();
@@ -35,6 +36,10 @@ export const Profile: React.FC = () => {
             <div className="spacer" />
             <SocialLink link="https://twitter.com/tora_tora_bit">
               <BsTwitter size="2rem" />
+            </SocialLink>
+            <div className="spacer" />
+            <SocialLink link="/keyword_list">
+              <span dangerouslySetInnerHTML={{ __html: twemoji.parse("🗝") }} className="twemoji" />
             </SocialLink>
           </div>
         </div>
@@ -88,6 +93,9 @@ export const Profile: React.FC = () => {
         }
         .spacer {
           margin-left: 1.5rem;
+        }
+        .twemoji {
+          font-size: var(--font-size-6);
         }
 
         @media screen and (min-width: 600px) {
