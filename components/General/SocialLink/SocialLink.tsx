@@ -1,15 +1,16 @@
-import { ReactElement, ReactNode } from "react";
+import { HTMLAttributeAnchorTarget, ReactElement, ReactNode } from "react";
 
 interface SocialLinkProps {
   link: string;
   children: ReactNode;
+  target?: HTMLAttributeAnchorTarget;
 }
 
 export const SocialLink: React.FC<SocialLinkProps> = (props): ReactElement => {
-  const { link, children } = props;
+  const { link, children, target = "_blank" } = props;
   return (
     <>
-      <a href={link} target="_blank" rel="noreferrer">
+      <a href={link} target={target} rel="noreferrer">
         <div className="social-link-wrapper">{children}</div>
       </a>
 

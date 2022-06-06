@@ -1,6 +1,12 @@
 export interface Contents {
   profile: Profile;
   skills: Skill[];
+  keywords: {
+    categoryList: Category[];
+    keywordList: Keyword[];
+    keywordRandomLabel: string;
+    keywrodRandomDescription: string;
+  };
 }
 
 export interface Profile {
@@ -14,4 +20,14 @@ export interface Profile {
 export interface Skill {
   category: string;
   subCategory?: string[];
+}
+
+export interface Keyword {
+  categoryId: number;
+  keyword: string;
+}
+
+export interface Category {
+  id: number;
+  name: string;
 }
