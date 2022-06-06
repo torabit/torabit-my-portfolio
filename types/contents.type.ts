@@ -5,6 +5,7 @@ export interface Contents {
     categoryList: Category[];
     keywordList: Keyword[];
     keywordRandomLabel: string;
+    filterLabel: string;
     keywrodRandomDescription: string;
   };
 }

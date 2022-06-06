@@ -57,7 +57,7 @@ const KeywordList = () => {
           <Dropdown>
             <DropdownToggle>
               <div className="dropdown-toggle">
-                フィルター
+                {contents.keywords.filterLabel}
                 <MdKeyboardArrowDown size="20" />
               </div>
             </DropdownToggle>
@@ -150,8 +150,10 @@ const KeywordList = () => {
         }
         .dropdown-toggle {
           display: flex;
+          justify-content: center;
+          align-items: center;
           background-color: var(--color-background-button);
-          padding: 0.8rem;
+          padding: 0.5rem 1rem;
           color: var(--color-text-base);
           border-radius: var(--border-radius-large);
           font-weight: var(--font-weight-bold);

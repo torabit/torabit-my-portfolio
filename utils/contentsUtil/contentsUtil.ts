@@ -147,7 +147,8 @@ export class ContentsUtil {
         { categoryId: 9, keyword: "Being Friendly to Anyone" },
       ],
 
-      keywordRandomLabel: "I will pick one keyword randomly!",
+      keywordRandomLabel: "Choose a keyword randomly !",
+      filterLabel: "Filter",
       keywrodRandomDescription: "Description",
     },
   };
@@ -296,6 +297,7 @@ export class ContentsUtil {
         { categoryId: 9, keyword: "誰とでも仲良く" },
       ],
       keywordRandomLabel: "ランダムでキーワードを1つ選ぶよ",
+      filterLabel: "フィルター",
       keywrodRandomDescription: "説明",
     },
   };
