@@ -4,7 +4,7 @@ import { useKeyword } from "@/states/keywordState";
 import { ContentsUtil } from "@/utils/contentsUtil";
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownMenuItem } from "@/Layout/Dropdown";
 import { useCategoryFilter } from "@/states/categoryFilterState";
-import { TagButton } from "../../components/General/TagButton/TagButton";
+import { TagButton } from "@/General/TagButton";
 import { useEffect, useState } from "react";
 import { Category } from "@/types/contents.type";
 import { MdKeyboardArrowDown } from "react-icons/md";
@@ -67,7 +67,7 @@ const KeywordList = () => {
             >
               {keywords.categoryList.map((category) =>
                 categoryFilter.includes(category.id) ? null : (
-                  <div onClick={() => addFilter(category.id)}>
+                  <div key={category.id} onClick={() => addFilter(category.id)}>
                     <DropdownMenuItem>{category.name}</DropdownMenuItem>
                   </div>
                 )
@@ -76,7 +76,7 @@ const KeywordList = () => {
           </Dropdown>
           <div className="filtered-category-wrapper">
             {filteredCategory?.map((category) => (
-              <TagButton onPress={() => removeFilter(category.id)} label={category.name} />
+              <TagButton key={category.id} onPress={() => removeFilter(category.id)} label={category.name} />
             ))}
           </div>
         </div>
