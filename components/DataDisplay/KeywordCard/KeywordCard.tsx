@@ -3,7 +3,7 @@ import { ReactElement } from "react";
 
 interface KeywordCardProps {
   id: number;
-  keyword: string;
+  keyword?: string;
   category?: string;
   alreadySelected?: boolean;
   onPress?: () => void;

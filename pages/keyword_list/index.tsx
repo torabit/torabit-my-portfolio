@@ -32,16 +32,16 @@ const KeywordList = () => {
       <div className="contents-wrapper">
         <div className="random-picker-wrapper">
           <div className="random-picker">
-            {currentKeywordId !== 0 ? (
+            {currentKeywordId !== null ? (
               <KeywordCard
                 id={currentKeywordId + 1}
-                keyword={keyword.keyword}
+                keyword={keyword?.keyword}
                 category={category?.name}
                 onPress={pickOneKeyword}
               />
             ) : (
               <KeywordCard
-                id={currentKeywordId}
+                id={0}
                 keyword={keywords.keywordRandomLabel}
                 category={keywords.keywrodRandomDescription}
                 onPress={pickOneKeyword}

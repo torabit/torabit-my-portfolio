@@ -20,9 +20,9 @@ const checkedKeywordsState = atom<number[]>({
   default: [],
 });
 
-const currentKeywordIdState = atom<number>({
+const currentKeywordIdState = atom<number | null>({
   key: "currentKeywordIdState",
-  default: 0,
+  default: null,
 });
 
 export const useKeyword = () => {
@@ -32,7 +32,7 @@ export const useKeyword = () => {
 
   const pickOneKeyword = () => {
     if (uncheckedKeywords.length === 0) {
-      setCurrentKeywordId(0);
+      setCurrentKeywordId(null);
       return;
     }
     // ランダムな配列のindexを取得
@@ -54,8 +54,10 @@ export const useKeyword = () => {
 
   const getKeyword = () => {
     const contents = new ContentsUtil().getContents();
-
-    return contents.keywords.keywordList[currentKeywordId];
+    if (currentKeywordId !== null) {
+      return contents.keywords.keywordList[currentKeywordId];
+    }
+    return null;
   };
 
   const toggleKeyword = (id: number) => {
