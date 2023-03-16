@@ -1,3 +1,3 @@
 ## My portfolio
 
-https://toranosuke-ujike-portfolio.herokuapp.com/
+https://torabit-my-portfolio.vercel.app/
