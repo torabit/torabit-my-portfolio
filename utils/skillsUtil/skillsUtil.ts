@@ -14,6 +14,8 @@ import GrpcIcon from "public/svgs/grpc.svg";
 import StorybookIcon from "public/svgs/storybook.svg";
 import JestIcon from "public/svgs/jest.svg";
 import DockerIcon from "public/svgs/docker.svg";
+import GoIcon from 'public/svgs/go.svg';
+import RustIcon from "public/svgs/rust.svg";
 
 export class SkillsUtil {
   private readonly frontEnd: SkillConstant[] = [
@@ -55,6 +57,16 @@ export class SkillsUtil {
       icon: TypeScriptIcon,
       url: "https://www.typescriptlang.org/",
     },
+    {
+      name:"Rust",
+      icon: RustIcon,
+      url: "https://www.rust-lang.org/",
+    },
+    {
+      name: "Go",
+      icon: GoIcon,
+      url: "https://go.dev/",
+    }
     {
       name: "Node.js",
       icon: NodeIcon,
