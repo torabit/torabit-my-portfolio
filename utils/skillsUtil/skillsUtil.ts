@@ -66,7 +66,7 @@ export class SkillsUtil {
       name: "Go",
       icon: GoIcon,
       url: "https://go.dev/",
-    }
+    },
     {
       name: "Node.js",
       icon: NodeIcon,
