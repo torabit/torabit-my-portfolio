@@ -10,7 +10,7 @@ export class ContentsUtil {
       biography: `Nice to meet you.🎈
       My name is Toranosuke Ujike.🐯 I started to study programing in April of 2021.
       Learning new things despite of my position  is what I am interested in. Such as new languages, frame work and architecture.📒
-      Absorbing opinions is another thing I have fun doing. I have made connections with people on the internet, who are now my great 友達.🕸️
+      Absorbing opinions is another thing I have fun doing. I have made connections with people on the internet, who are now my great friends.🕸️
       On my spare time, I like making music and play my bass.🎹🎸
        Thank you.👶🏾
       `,
